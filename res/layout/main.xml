@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    >
+<View  
+    android:layout_width="0px"
+    android:layout_height="0px"
+    android:layout_weight="141"
+    />
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="0px"
+    android:layout_weight="277"
+    >
+    <View  
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:layout_weight="215"
+        />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0px"
+        android:layout_height="fill_parent"
+        android:layout_weight="230"
+        >
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="69"
+            android:background="@drawable/start_btn_background"
+            android:onClick="onStartClicked"
+            />
+        <View  
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:layout_weight="71"
+            />
+        <Button
+            android:id="@+id/btn_stop"
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="69"
+            android:background="@drawable/stop_btn_background"
+            android:enabled="false"
+            android:onClick="onStopClicked"
+            />
+        <View  
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:layout_weight="68"
+            />
+    </LinearLayout>
+    <View  
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:layout_weight="35"
+        />
+</LinearLayout>
+<jp.co.spookies.android.pedometer.StepView
+    android:id="@+id/step_view"
+    android:layout_width="fill_parent" 
+    android:layout_height="0px"
+    android:layout_weight="120"
+    android:text="0"
+    />
+<View  
+    android:layout_width="0px"
+    android:layout_height="0px"
+    android:layout_weight="98"
+    />
+<jp.co.spookies.android.pedometer.TimerView
+    android:id="@+id/timer_view"
+    android:layout_width="fill_parent" 
+    android:layout_height="0px"
+    android:layout_weight="72"
+    android:text="0"
+    />
+<View  
+    android:layout_width="0px"
+    android:layout_height="0px"
+    android:layout_weight="92"
+    />
+</LinearLayout>
